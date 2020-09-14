@@ -19,4 +19,7 @@ information but have never employed anyone to look at their data that is generat
 
 Your employer wants you to provide a report to analyze opportunities for growth and make a recommendation on whether TellCo is worth buying or selling. You will do this by analyzing a telecommunication dataset that contains useful information about the customers & their activities on the network.
 
-# Contents
+## Contents
+* Jupyter Notebook file
+  * Interim solution
+  * Final solution
