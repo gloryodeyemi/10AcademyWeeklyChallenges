@@ -32,3 +32,4 @@ dashboard that illustrates the progress of students across time.
 
 ## Content
 * Interim solution
+* Final solution
