@@ -176,7 +176,7 @@ pyflakes==1.6.0
 Pygments==2.2.0
 pygpu==0.7.6
 PyHamcrest==2.0.2
-PyJWT==1.7.1
+PyJWT==2.4.0
 pylint==1.8.4
 pymc3==3.9.2
 PyMySQL==0.10.0
