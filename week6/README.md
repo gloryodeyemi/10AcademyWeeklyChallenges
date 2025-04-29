@@ -11,68 +11,96 @@ To predict customer subscription to bank term deposits using supervised machine 
 
 ## 🛠 Tools & Libraries
 * Languages: Python
-* Models: XGBoost, Logistic Regression, MLP
+* Models: XGBoost, Logistic Regression, Multi-Layer Perceptron (MLP)
 * Libraries: Pandas, NumPy, Scikit-learn, XGBoost, imbalanced-learn, Matplotlib, Seaborn
 * Visualization: Python (Matplotlib, Seaborn), Tableau (Univariate and Bivariate Analysis)
 * Others: SMOTE, PCA, t-SNE
 
-## 🔍 Exploratory Data Analysis (EDA)
+## 📌 Project Workflow Breakdown
+
+### 🔍 1. Exploratory Data Analysis (EDA)
 EDA was conducted to understand data distribution, detect outliers, and uncover insights:
 * Shape, structure, and summary statistics
 * Categorical vs. numerical feature analysis
-* Correlation matrix
 * Visualization with Tableau for univariate and bivariate insights
+* Correlation between data features using heatmap
 * Outlier treatment using the IQR method
+* Identified target variable imbalance (y: yes/no).
 
-## Contents
-* Notebook: Jupyter notebook file for;
-  * Exploratory Data Analysis
-  * Developing the code
-  
-  
-* Util.py: python script to import a python library
+### 🧼 2. Data Preprocessing
+* Categorical variables encoding using One-Hot encoding
+* Rescaling numerical variables using `StandardScaler()` to normalize features.
+* Specifying dependent and independent variables
+* Splitting the dataset into training and testing sets to properly evaluate model performance.
+* Feature Engineering: Combined and refined features for better performance.
+* Dimensionality Reduction: Applied Principal Component Analysis (PCA) to reduce feature space while retaining variance.
+* Handling class imbalance: Applied SMOTE (Synthetic Minority Oversampling Technique) to balance the dataset.
 
+### 🤖 3. Model Building
+* Trained the following machine learning models:
+  * Logistic Regression
+  * XGBoost Classifier
+  * Multi-Layer Perceptron (MLP)
+* Implemented two types of cross-validation:
+  * K-Fold Cross-Validation
+  * Stratified K-Fold Cross-Validation
+ 
+### 📈 4. Evaluation Metrics
+* Assessed model performance using:
+  * Accuracy
+  * Area Under the Curve (AUC)
+  * Precision
+  * Recall
+  * F1 Score
+ 
+### 🎯 5. Model Comparison & Selection
+* Compared results across all three models.
+* XGBoost showed the best performance and was chosen as the final model for prediction.
 
-* Preprocess.py: python script for data preprocessing
+| K-Fold Cross Validation Results |
+|:-------------------------------:|
 
+| Model                   | Accuracy (%) | AUC (%)  | Precision (%) | Recall (%) | F1-Score (%) |
+|-------------------------|--------------|----------|---------------|------------|--------------|
+| Logistic Regression     | 70.74        |     -    | 61.98         | 63.84      | 57.32        |
+| XGBoost                 | 85.53        |     -    | 69.48         | 78.39      | 71.70        |
+| Multi Layer Perceptron  | 89.57        | 76.85    | 56.86         | 26.81      | 36.20        |
 
-* Data.py: python script for data loader
+| Stratified K-Fold Cross Validation Results |
+|:------------------------------------------:|
 
+| Model                   | Accuracy (%) | AUC (%)  | Precision (%) | Recall (%) | F1-Score (%) |
+|-------------------------|--------------|----------|---------------|------------|--------------|
+| Logistic Regression     | 73.46        | 79.01    | 78.71         | 64.31      | 70.78        |
+| XGBoost                 | **87.23**    | **94.55**| **88.60**     | **85.43**  | **86.88**    |
+| Multi Layer Perceptron  | 89.53        | 77.05    | 56.58         | 27.47      | 36.82        |
 
-* Model.py: python script for building the model
+### 🔮 6. Final Prediction
+* Used the trained XGBoost model to make predictions on unseen data.
+* Output includes binary classification (`yes`/`no`) for term deposit subscription likelihood.
 
+## 📁 Project Structure
+```
+.
+├── notebooks/
+│   ├── WEEK6_CHALLENGE_EDA.ipynb   # Exploratory Data Analysis
+│   └── WEEK6_CHALLENGE_MODEL.ipynb # Script conversion: preprocessing to prediction
+├── Data.py                         # Define dependent/independent variables, split data, apply SMOTE & PCA
+├── Main.py                         # Main script to run pipeline on dataset without outliers
+├── Main-org.py                     # Main script to run pipeline on original dataset
+├── Model.py                        # Build models (LogReg, XGBoost, MLP), cross-validation, evaluation
+├── Preprocessing.py                # Encoding categorical columns, rescaling numerical columns
+├── README.md                       # Project documentation
+├── Util.py                         # python library to ignore warnings
+└── requirements.txt                # Project dependencies
+```
 
-* Main.py: python script to execute the code using dataset without outliers
+## 📌 How to Run
+1. Install dependencies
+```pip install -r requirements.txt```
+2. Run the main script
+```python Main.py```
 
-
-* Main_org.py: python script to execute the code using the original dataset
-
-
-* Requirements.txt: Text file containing python packages needed for the proect.
-
-## Code Execution Guide
-* **Notebook File**
-  * Exploratory Data Analysis: Run this code first, to get an understanding of the dataset and how the features contribute to the machine learning model.
-  * Model: Run this code if you want to generate the python script or you can skip to running the python scripts directly.
-  
-  
-* **Script File**
-  * Util.py: Run this code first.
-  
-  
-  * Preprocess.py: This contains the data preprocessing and it should be executed next. It includes functions for encoding categorical columns and rescaling numerical columns.
-  
-  
-  * Data.py: This is the data loader and should be executed after the preprocess file. It contains functions for choosing our dependent and independent variables, splitting the dataset, dimensionality reduction, and treating class imbalance.
-  
-  
-  * Model.py: This contains functions for building the model and making predictions and it is executed after Data.py. The four models considered in this projects are;
-    * Logistic Regression
-    * XGBoost
-    * Multi Layer Perceptron
-    * SVM
-    
-    
-  * Main.py/Main_org.py: This is the main code that calls all the methods in the previous scripts and when executed, generates result. This is executed last.
-  
- **NOTE:** A quick reminder; Util.py --> Preprocess.py --> Data.py --> Model.py --> Main.py/Main_org.py
+## 📬 Contact
+- For questions, feedback, opportunities, or collaborations, connect with me via [LinkedIn](https://www.linkedin.com/in/glory-odeyemi/).
+- For more exciting projects or inspiration, check out my [Portfolio](https://gloryodeyemi.github.io/) or [GitHub Repositories](https://github.com/gloryodeyemi).
