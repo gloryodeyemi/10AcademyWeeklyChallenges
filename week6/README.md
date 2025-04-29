@@ -9,6 +9,13 @@ To predict customer subscription to bank term deposits using supervised machine 
 * File Used: `bank-additional-full.csv`
 * Target Variable: `y` – Whether the customer subscribed to a term deposit (`yes`/`no`)
 
+## 🛠 Tools & Libraries
+* Languages: Python
+* Models: XGBoost, Logistic Regression, MLP
+* Libraries: Pandas, NumPy, Scikit-learn, XGBoost, imbalanced-learn, Matplotlib, Seaborn
+* Visualization: Python (Matplotlib, Seaborn), Tableau (Univariate and Bivariate Analysis)
+* Others: SMOTE, PCA, t-SNE
+
 ## 🔍 Exploratory Data Analysis (EDA)
 EDA was conducted to understand data distribution, detect outliers, and uncover insights:
 * Shape, structure, and summary statistics
