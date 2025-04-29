@@ -9,6 +9,14 @@ To predict customer subscription to bank term deposits using supervised machine 
 * File Used: `bank-additional-full.csv`
 * Target Variable: `y` – Whether the customer subscribed to a term deposit (`yes`/`no`)
 
+## 🔍 Exploratory Data Analysis (EDA)
+EDA was conducted to understand data distribution, detect outliers, and uncover insights:
+* Shape, structure, and summary statistics
+* Categorical vs. numerical feature analysis
+* Correlation matrix
+* Visualization with Tableau for univariate and bivariate insights
+* Outlier treatment using the IQR method
+
 ## Contents
 * Notebook: Jupyter notebook file for;
   * Exploratory Data Analysis
