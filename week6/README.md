@@ -1,16 +1,13 @@
-# WEEK 6 CHALLENGE
+# 🏦 Bank Institution Term Deposit Predictive Model
+This project focuses on building a machine learning model to predict whether a customer will subscribe to a term deposit product based on a real-world bank marketing dataset. The solution demonstrates a full data science workflow from data exploration to model prediction, with a focus on handling imbalanced data and selecting the best-performing model.
 
-## Project
-Bank Institution Term Deposit Predictive Model
+## 📌 Project Objective
+To predict customer subscription to bank term deposits using supervised machine learning techniques, with the goal of supporting marketing decision-making and campaign targeting.
 
-## Business need
-You successfully finished up to your rigorous job interview process with Bank of Portugal as a machine learning researcher. The investment and portfolio department would want to be able to identify their customers who potentially would subscribe to their term deposits. As there has been heightened interest of marketing managers to carefully tune their directed campaigns to the rigorous selection of contacts, the goal of your employer is to find a model that can predict which future clients who would subscribe to their term deposit. Having such an effective predictive model can help increase their campaign efficiency as they would be able to identify customers who would subscribe to their term deposit and thereby direct their marketing efforts to them. This would help them better manage their resources (e.g human effort, phone calls, time)
-
-
-The Bank of Portugal, therefore, collected a huge amount of data that includes customers profiles of those who have to subscribe to term deposits and the ones who did not subscribe to a term deposit. As their newly employed machine learning researcher, they want you to come up with a robust predictive model that would help them identify customers who would or would not subscribe to their term deposit in the future.
-
-
-Your main goal as a machine learning researcher is to carry out data exploration, data cleaning, feature extraction, and developing robust machine learning algorithms that would aid them in the department.
+## 🗃️ Dataset
+* Source: [UCI Machine Learning Repository - Bank Marketing Dataset](https://archive.ics.uci.edu/dataset/222/bank+marketing)
+* File Used: `bank-additional-full.csv`
+* Target Variable: `y` – Whether the customer subscribed to a term deposit (`yes`/`no`)
 
 ## Contents
 * Notebook: Jupyter notebook file for;
