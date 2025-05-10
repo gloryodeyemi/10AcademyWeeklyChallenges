@@ -41,7 +41,7 @@ construct==2.10.56
 contextlib2==0.5.5
 contextvars==2.4
 covid19-inference @ git+https://github.com/Priesemann-Group/covid19_inference.git@6a4aa1a1e521e5e3ec37c5ba8ca3e181664e4296
-cryptography==2.9.2
+cryptography==39.0.1
 cssselect==1.1.0
 cycler==0.10.0
 Cython==0.28.2
