@@ -175,7 +175,7 @@ pycryptodomex==3.9.8
 pycurl==7.43.0.5
 PyDispatcher==2.0.5
 pyflakes==1.6.0
-Pygments==2.2.0
+Pygments==2.7.4
 pygpu==0.7.6
 PyHamcrest==2.0.2
 PyJWT==1.7.1
